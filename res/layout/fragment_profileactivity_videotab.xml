@@ -1,0 +1,30 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<com.android.golfpad.view.PullDownListView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/layout_profileActivityVideotab_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	
+	    <ListView
+	        android:id="@+id/id_stickynavlayout_innerlistview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:listSelector="@android:color/transparent"  
+	        android:divider="@null" />
+	</com.android.golfpad.view.PullDownListView>
+    <TextView 
+        android:id="@+id/tv_profileActivityVideotab_emptytip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="一个视频都没有哟！"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+</RelativeLayout>
+

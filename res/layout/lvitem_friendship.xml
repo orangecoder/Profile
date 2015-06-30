@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="15dp"
+	    android:background="@color/white"
+        >
+        <com.golfpad.ping.AvatarImageView
+            android:id="@+id/iv_friendship_avatar"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/test_user_avatar"
+	        app:border_width="0.5dp"
+            app:border_color="#e2dedb"
+            /> 
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/iv_friendship_avatar"
+		    android:layout_centerVertical="true"
+		    android:orientation="vertical"
+		    >
+		    <TextView 
+		        android:id="@+id/tv_friendship_nickName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Joan"
+		        android:textColor="#706d6b"
+		        android:textSize="18sp"
+		        />
+		    <!-- <TextView 
+		        android:id="@+id/tv_friendship_userName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="3dp"
+		        android:text="用户名:珍珍薯片"
+		        android:textColor="#b3b3b3"
+		        android:textSize="10sp"
+		        android:visibility="gone"
+		        /> -->
+		</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#ffffff</color>
+    <color name="bg_divideline">#c3d5cf</color>
+    <color name="bg_activity_default">#eaf3f0</color>
+    <color name="click_color">#50ffffff</color>
+    <color name="tc_normal">#333333</color>
+    <color name="tc_highlight">#ef4356</color>
+    <color name="tc_minor">#a2a2a2</color> 
+</resources>

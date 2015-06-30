@@ -1,0 +1,193 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+    <RelativeLayout 
+        android:id="@+id/layout_profileActivity_root"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:background="@color/bg_activity_default"
+	    android:orientation="vertical"
+	    >
+	    <com.zhy.view.StickyNavLayout
+	        android:id="@+id/snl_profileActivity"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="220dp"
+	            android:orientation="vertical" >
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:alpha="0.8"
+	                android:background="@drawable/bg_profileactivity_head" />
+	
+	            <View
+	                android:id="@+id/v_profileActivity_titlebarhelper"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dp" />
+	
+	            <RelativeLayout
+	                android:id="@id/id_stickynavlayout_topview"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_below="@+id/v_profileActivity_titlebarhelper" >
+	
+	                <LinearLayout
+	                    android:id="@id/id_stickynavlayout_topview_content"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:gravity="center"
+	                    android:orientation="vertical" >
+	
+	                    <com.golfpad.ping.AvatarImageView
+	                        android:id="@+id/iv_profileActivity_avatar"
+	                        android:layout_width="80dp"
+	                        android:layout_height="80dp" 
+	                        />
+	
+	                    <TextView
+	                        android:id="@+id/tv_profileActivity_nickname"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="5dp"
+	                        android:text="ping"
+	                        android:textColor="#ffffff"
+	                        android:textSize="15sp" />
+	
+	                    <LinearLayout
+	                        android:id="@+id/lnrlay_title"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="7dp"
+	                        android:gravity="center"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="20dp"
+	                        android:paddingRight="20dp"
+	                        android:visibility="gone" >
+	
+	                        <ImageView
+	                            android:layout_width="11dp"
+	                            android:layout_height="11dp"
+	                            android:src="@drawable/icon_verified"
+	                            android:scaleType="centerInside" />
+	
+	                        <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="认证信息："
+	                            android:textColor="#ffffff"
+	                            android:textSize="11dp"
+	                            android:singleLine="true" />
+	
+	                        <TextView
+	                            android:id="@+id/txtv_title"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:singleLine="true"
+	                            android:ellipsize="marquee"
+	                            android:focusable="true"
+	                            android:focusableInTouchMode="true"
+	                            android:text="世界冠军"
+	                            android:textColor="#ffffff"
+	                            android:textSize="11dp" />
+	                    </LinearLayout>
+	
+	                    <LinearLayout
+	                        android:id="@+id/layout_profileactivity_follow"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="7dp"
+	                        android:background="@drawable/bg_profileactivity_follow"
+	                        android:gravity="center"
+	                        android:orientation="horizontal"
+	                        android:paddingBottom="8dp"
+	                        android:paddingLeft="15dp"
+	                        android:paddingRight="15dp"
+	                        android:paddingTop="8dp"
+	                        android:visibility="gone" >
+	
+	                        <ImageView
+	                            android:id="@+id/iv_profileactivity_follow"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginRight="3dp"
+	                            android:src="@drawable/ic_profileactivity_edit" />
+	
+	                        <TextView
+	                            android:id="@+id/tv_profileactivity_follow"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="编辑资料"
+	                            android:textColor="#4ebdcc"
+	                            android:textSize="13sp" />
+	                    </LinearLayout>
+	                </LinearLayout>
+	            </RelativeLayout>
+	        </RelativeLayout>
+	
+	        <com.zhy.view.SimpleViewPagerIndicator
+	            android:id="@id/id_stickynavlayout_indicator"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:background="#ffffff" >
+	        </com.zhy.view.SimpleViewPagerIndicator>
+			<View
+		        android:layout_width="match_parent"
+		        android:layout_height="15dp" />
+	        <android.support.v4.view.ViewPager
+	            android:id="@id/id_stickynavlayout_viewpager"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@color/bg_activity_default" >
+	        </android.support.v4.view.ViewPager>
+	    </com.zhy.view.StickyNavLayout>
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="44dp"
+	        android:layout_alignParentTop="true" >
+	
+	        <RelativeLayout
+	            android:id="@+id/layout_profileActivity_back"
+	            android:layout_width="48dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/bg_click"
+	            android:clickable="true" >
+	
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:src="@drawable/ic_back" />
+	        </RelativeLayout>
+	
+	        <TextView
+	            android:id="@+id/tv_profileActivity_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:textColor="@color/white"
+	            android:textSize="18sp"
+	            android:visibility="gone" />
+	    </RelativeLayout>
+	</RelativeLayout>
+	<com.manuelpeinado.imagelayout.ImageLayout 
+	    xmlns:custom="http://schemas.android.com/apk/res-auto"
+	    android:id="@+id/iv_profileActivity_avatardetail"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:background="#000000"
+	    custom:fit="auto"
+	    android:visibility="gone"
+	    />
+</FrameLayout>

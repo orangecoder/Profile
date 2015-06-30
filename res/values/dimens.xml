@@ -1,0 +1,42 @@
+<resources>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="com_sina_weibo_sdk_loginview_text_size">16.0sp</dimen>
+ 	<dimen name="com_sina_weibo_sdk_loginview_padding">12dip</dimen>
+    <dimen name="com_sina_weibo_sdk_loginview_padding_left">12dip</dimen>
+    <dimen name="com_sina_weibo_sdk_loginview_padding_right">16dp</dimen>
+    <dimen name="com_sina_weibo_sdk_loginview_padding_top">6dp</dimen>
+    <dimen name="com_sina_weibo_sdk_loginview_padding_bottom">6dp</dimen>
+    <dimen name="com_sina_weibo_sdk_loginview_compound_drawable_padding">12dp</dimen>
+    
+    
+    <dimen name="slidingmenu_offset">120dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="custom_updatebar_height">44dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen> 
+    
+    <dimen name="header_height">250dp</dimen>
+    <dimen name="header_logo_size">66dp</dimen>
+    
+    <dimen name="sc_corner_radius">4dp</dimen>
+    <dimen name="sc_border_thickness">1dp</dimen>
+    
+    <dimen name="layout_item_height">45dp</dimen>
+    <dimen name="layout_item_padding">10dp</dimen>
+    <dimen name="layout_item_type_textsize">15sp</dimen>
+    <dimen name="layout_item_tip_textsize">12sp</dimen>
+    
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="indicator_margin">10dp</dimen>
+    <dimen name="bar_height">35dp</dimen>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <dimen name="horizontalspit_view_height">0.6dp</dimen>
+</resources>
